@@ -160,7 +160,7 @@
                 </div>
                 <button class="btn-primary" onclick="handleLogin()" id="btn-login">Masuk</button>
                 <p style="margin-top: 15px; font-size: 0.75rem; color: #666;">
-                    Guru: Guru / UnggulMenawan <br> Siswa: Nama Lengkap / Password (Dari Guru)
+                    Guru: guru / guru123* <br> Siswa: Nama Lengkap / Password (Dari Guru)
                 </p>
             </div>
         </main>
