@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="id">
 <head>
     <meta charset="UTF-8">
@@ -149,7 +150,7 @@
                 <p id="current-year-display" style="margin-bottom: 20px; color: #666;"></p>
                 
                 <div class="form-group">
-                    <label for="username" id="lbl-username">Username</label>
+                    <label for="username" id="lbl-username">Username (Nama Siswa)</label>
                     <input type="text" id="username" placeholder="Masukkan nama atau username">
                 </div>
                 <div class="form-group">
@@ -360,6 +361,16 @@
                 { id: 'X.3', name: 'Kelas X.3' },
                 { id: 'X.4', name: 'Kelas X.4' },
                 { id: 'X.5', name: 'Kelas X.5' }
+            ],
+            // Demo students
+            students: [
+                { id: 5, name: "Eko Prasetyo", class: "X.3", password: generateRandomPassword() },
+                { id: 6, name: "Fajar Nugraha", class: "X.3", password: generateRandomPassword() },
+                { id: 8, name: "Hadi Kusuma", class: "X.5", password: generateRandomPassword() }
+            ],
+            attendance: [] 
+        };
+
         function saveData() {
             localStorage.setItem(STORAGE_KEYS.STUDENTS, JSON.stringify(state.students));
             localStorage.setItem(STORAGE_KEYS.ATTENDANCE, JSON.stringify(state.attendance));
@@ -399,7 +410,7 @@
                 msgPassReset: "Password siswa berhasil di-reset.", msgDownload: "Mengunduh Data...",
                 msgResetConfirm: "PERINGATAN: Semua data siswa dan absensi akan dihapus permanen dan dikembalikan ke kondisi awal. Lanjutkan?",
                 welcome: "Selamat Datang di SMAN 1 KAPONTORI", teacherName: "Guru: Unggul Menawan, S.Pd.",
-                stHadir: "Hadir", stSakit: "Sakit", stIzin: "Izin", stAlfa: "Alpha",
+                stHadir: "Hadir", stSakit: "Sakit", stIzin: "Izin", stAlfa: "Alfa",
                 formAdd: "Tambah Siswa Baru", formEdit: "Edit Data Siswa"
             },
             en: {
@@ -418,7 +429,7 @@
                 msgPassReset: "Student password has been reset.", msgDownload: "Downloading Data...",
                 msgResetConfirm: "WARNING: All student and attendance data will be permanently deleted and reset to default. Continue?",
                 welcome: "Welcome to SMAN 1 KAPONTORI", teacherName: "Teacher: Unggul Menawan, S.Pd.",
-                stHadir: "Present", stSakit: "Sick", stIzin: "Permission", stAlpha: "Absent",
+                stHadir: "Present", stSakit: "Sick", stIzin: "Permission", stAlfa: "Absent",
                 formAdd: "Add New Student", formEdit: "Edit Student Data"
             }
         };
