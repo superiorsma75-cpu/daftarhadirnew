@@ -151,7 +151,7 @@
                 <p id="current-year-display" style="margin-bottom: 20px; color: #666;"></p>
                 
                 <div class="form-group">
-                    <label for="username" id="lbl-username">Username (Nama Siswa)</label>
+                    <label for="username" id="lbl-username">Username</label>
                     <input type="text" id="username" placeholder="Masukkan nama atau username">
                 </div>
                 <div class="form-group">
@@ -160,7 +160,7 @@
                 </div>
                 <button class="btn-primary" onclick="handleLogin()" id="btn-login">Masuk</button>
                 <p style="margin-top: 15px; font-size: 0.75rem; color: #666;">
-                    Guru: guru / guru123* <br> Siswa: Nama Lengkap / Password (Dari Guru)
+                    Guru: guru / guru123 <br> Siswa: Nama Lengkap / Password (Dari Guru)
                 </p>
             </div>
         </main>
@@ -362,13 +362,6 @@
                 { id: 'X.3', name: 'Kelas X.3' },
                 { id: 'X.4', name: 'Kelas X.4' },
                 { id: 'X.5', name: 'Kelas X.5' }
-            ],
-            // Demo students
-            students: 
-            ],
-            attendance: [] 
-        };
-
         function saveData() {
             localStorage.setItem(STORAGE_KEYS.STUDENTS, JSON.stringify(state.students));
             localStorage.setItem(STORAGE_KEYS.ATTENDANCE, JSON.stringify(state.attendance));
