@@ -125,7 +125,7 @@
             <div class="brand">
                 <h1 id="school-name">SMAN 1 KAPONTORI</h1>
                 <p id="subject-info">Mata Pelajaran: Informatika</p>
-                <small id="teacher-info">Guru: Unggul Menawan, S.Pd.Gr</small>
+                <small id="teacher-info">Guru: Unggul Menawan, S.Pd.</small>
             </div>
             <div class="header-controls">
                 <div id="clock-display" style="font-weight: bold; font-size: 1.1rem; margin-right: 10px;">--:--:--</div>
